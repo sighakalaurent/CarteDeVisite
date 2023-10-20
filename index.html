@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+  
+  <div id="formulaire">
+    <div class="container">
+      <h1 >Créer Votre  carte de visite</h1>  
+    <label for="nom">Nom :</label>
+    <input type="text" id="nom" required size="40px" autofocus><br>
+
+    <label for="entreprise">Prenom :</label>
+    <input type="text" id="entreprise" required size="40px" autofocus><br>
+
+    <label for="email">Email :</label>
+    <input type="email" id="email" required size="40px" autofocus><br>
+
+    <label for="telephone">Téléphone :</label>
+    <input type="tel" id="telephone" required size="40px" autofocus>
+    <br>
+
+    <button type="button" onclick="validerFormulaire()">Valider</button>
+    </div>
+    
+  </div>
+  
+  <div id="carteVisite" class="hidden" style="display: none;">
+    <h2>Carte de visite :</h2>
+    <p>Nom : <span id="nomAffiche"></span></p>
+    <p>Prenom : <span id="entrepriseAffiche"></span></p>
+    <p>Email : <span id="emailAffiche"></span></p>
+    <p>Téléphone : <span id="telephoneAffiche"></span></p>
+    <button id="resetbtn">Reset</button>
+</div>
+
+</body>
+</html>
